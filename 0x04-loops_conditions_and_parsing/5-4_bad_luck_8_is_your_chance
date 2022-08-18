@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script loops 10 times and displays "Best School" each time
+# except it displays "bad luck" at the 4th iteration
+# and it "good luck" at the 8th iteration 
+
+i=0
+while (( "$i"<10 )) 
+do
+	if (( "$i" == 3 ))
+	then
+		echo "bad luck"
+	elif (( "$i" == 7 ))
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+
+	(( "i += 1" ))
+done
