@@ -1,0 +1,1 @@
+regex ti fe pami
