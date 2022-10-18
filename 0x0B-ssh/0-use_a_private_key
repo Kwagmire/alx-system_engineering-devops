@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# connects to 3.231.230.154 with ssh as ubuntu
+# using the private key stored in ~/.ssh/school
+
+ssh -i ~/.ssh/school ubuntu@3.231.230.154 
