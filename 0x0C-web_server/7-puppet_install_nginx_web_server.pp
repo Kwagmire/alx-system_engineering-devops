@@ -11,5 +11,5 @@ file { '/var/www/html/index.html':
 
 exec { 'edit config file':
   provider => shell,
-  command  => 'sudo sed -i "s/server_name _;/server_name_;\n\trewrite ^\/redirect_me https:\/\/alxafrica.com permanent;/" /etc/nginx/sites-available/default ; sudo service nginx restart'
+  command  => 'sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/alxafrica.com permanent;/" /etc/nginx/sites-available/default ; sudo service nginx restart'
 }
